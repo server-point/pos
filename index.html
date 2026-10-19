@@ -1186,15 +1186,15 @@
         </div>
         <button id="ios-install-close" aria-label="Dismiss">&times;</button>
     </div>
-    <div id="app-container">
-        <iframe 
-            src="https://script.google.com/macros/s/AKfycbzPxCSZW8FX-lbQGDuvtNdNLZsJA031tYeQ7K-3qxem90kMYLKvnnRXeJwtBdhEv4iq/exec" 
-            id="mainApp" 
-            title="Mbayom POS Application"
-            allow="payment; clipboard-write"
-            loading="lazy">
-        </iframe>
-    </div>
+    <div id="app-container" style="display:block;visibility:hidden">
+  <iframe id="mainApp" title="Mbayom POS Application"
+    allow="payment; clipboard-write"
+    src="https://script.google.com/macros/s/AKfycbzPxCSZW8FX-lbQGDuvtNdNLZsJA031tYeQ7K-3qxem90kMYLKvnnRXeJwtBdhEv4iq/exec"></iframe>
+</div>
+<a id="open-direct" hidden target="_blank" rel="noopener"
+   style="position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:9999;color:#60a5fa;font:13px Poppins,sans-serif"
+   href="https://script.google.com/macros/s/AKfycbzPxCSZW8FX-lbQGDuvtNdNLZsJA031tYeQ7K-3qxem90kMYLKvnnRXeJwtBdhEv4iq/exec">
+  Having trouble? Open Mbayom POS directly</a>
 
     <script>
         const canvas = document.getElementById('particleCanvas');
